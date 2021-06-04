@@ -46,7 +46,10 @@ export function toVerifiable(rule: any) {
   return verifiable
 }
 
-export function walliTableDrivenQuery<T = any, R = any>(value: T, tableRule: TableRule<T, R> | TableRule<T, R>[]) {
+export function walliTableDrivenQuery<T = any, R = any>(
+  value: T,
+  tableRule: StrictTableRule<T, R> | TableRule<T, R>[]
+) {
   if (Array.isArray(tableRule)) {
     const matchedList: any[] = []
     tableRule.some((rule) => {
