@@ -20,8 +20,36 @@ yarn add walli-table-driven
 ## Usage
 
 ```javascript
-import walliTableDriven from 'walli-table-driven'
+import * as w from 'walli'
+import { walliTableDrivenQuery } from 'walli-table-driven'
+
+walliTableDrivenQuery(
+  {
+    task: 'Do something',
+    status: 'done'
+  },
+  [
+    [
+      {
+        task: w.nil,
+        status: 'done'
+      },
+      {
+        ok: true
+      }
+    ]
+  ]
+) /* => {
+  matched: true,
+  result: {
+    ok: true
+  }
+} */
 ```
+
+## API
+
+### `walliTableDrivenQuery(value: T, rules: TableRules)`
 
 ## Contributing
 

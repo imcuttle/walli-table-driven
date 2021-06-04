@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`walliTableDriven should spec 1`] = `
+Object {
+  "matched": false,
+  "result": null,
+}
+`;
+
+exports[`walliTableDriven should spec 2`] = `
+Object {
+  "matched": true,
+  "result": null,
+  "rule": Array [
+    Object {
+      "matched": true,
+      "result": null,
+      "rule": Object {
+        "options": undefined,
+        "result": null,
+        "where": Object {
+          "age": 20,
+        },
+      },
+    },
+  ],
+}
+`;

@@ -3,8 +3,29 @@
  * @author imcuttle
  * @date 2018/4/4
  */
-import walliTableDriven from '../src'
+import { walliTableDrivenQuery } from '../src'
 
 describe('walliTableDriven', function () {
-  it('should spec', function () {})
+  it('should spec', function () {
+    expect(
+      walliTableDrivenQuery(
+        {
+          age: 20
+        },
+        [[{ age: 2 }, null]]
+      )
+    ).toMatchSnapshot()
+
+    expect(
+      walliTableDrivenQuery(
+        {
+          age: 20
+        },
+        [
+          [{ age: 2 }, null],
+          [{ age: 20 }, null]
+        ]
+      )
+    ).toMatchSnapshot()
+  })
 })

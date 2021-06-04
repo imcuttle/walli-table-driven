@@ -2815,7 +2815,7 @@ lodash.ismatch@^4.4.0:
   resolved "https://registry.npm.taobao.org/lodash.ismatch/download/lodash.ismatch-4.4.0.tgz#756cb5150ca3ba6f11085a78849645f188f85f37"
   integrity sha1-dWy1FQyjum8RCFp4hJZF8Yj4Xzc=
 
-lodash@4.x, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.7.0:
+lodash@4.x, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.5, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
@@ -4131,6 +4131,14 @@ walker@^1.0.7:
   integrity sha1-L3+bj9ENZ3JisYqITijRlhjgKPs=
   dependencies:
     makeerror "1.0.x"
+
+walli@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.nlark.com/walli/download/walli-1.1.4.tgz#533607e909edc45fe1905b08cba2b6eed38f3b0a"
+  integrity sha1-UzYH6QntxF/hkFsIy6K27tOPOwo=
+  dependencies:
+    json-stringify-safe "^5.0.1"
+    lodash "^4.17.5"
 
 webidl-conversions@^5.0.0:
   version "5.0.0"
