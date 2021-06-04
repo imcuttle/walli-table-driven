@@ -49,7 +49,16 @@ export function toVerifiable(rule: any) {
 export function walliTableDrivenQuery<T = any, R = any>(
   value: T,
   tableRule: StrictTableRule<T, R> | TableRule<T, R>[]
-) {
+):
+  | {
+      matched: false
+      result: null
+    }
+  | {
+      result: R
+      rule: StrictTableRule<T, R> | StrictTableRule<T, R>[]
+      matched: true
+    } {
   if (Array.isArray(tableRule)) {
     const matchedList: any[] = []
     tableRule.some((rule) => {
@@ -85,7 +94,7 @@ export function walliTableDrivenQuery<T = any, R = any>(
       // @ts-ignore
       res.rule = matchedList
     }
-    return res
+    return res as any
   }
 
   const strictTableRule = toStrictTableRule(tableRule)
