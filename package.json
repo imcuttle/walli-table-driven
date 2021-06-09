@@ -1,6 +1,6 @@
 {
   "name": "walli-table-driven",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The table driven engine which respect walli",
   "author": "imcuttle <moyuyc95@gmail.com>",
   "scripts": {
