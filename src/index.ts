@@ -36,7 +36,7 @@ export function toStrictTableRule(rule): StrictTableRule {
   return rule
 }
 
-export function toVerifiable(rule: any) {
+export function toVerifiable(rule: any = {}) {
   let verifiable: Verifiable
   if (rule instanceof Verifiable) {
     verifiable = rule
