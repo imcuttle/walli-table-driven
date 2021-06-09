@@ -17,7 +17,7 @@ export interface TableRuleOptions {
 
 export interface StrictTableRule<T = any, R = any> {
   where: WhereRule<T>
-  result: TableRuleResult<T, R>
+  result?: TableRuleResult<T, R>
   options?: TableRuleOptions
 }
 

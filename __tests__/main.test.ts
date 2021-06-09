@@ -27,5 +27,16 @@ describe('walliTableDriven', function () {
         ]
       )
     ).toMatchSnapshot()
+
+    expect(
+      walliTableDrivenQuery(
+        {
+          age: 20
+        },
+        {
+          where: { age: 20 }
+        }
+      )
+    ).toMatchSnapshot()
   })
 })

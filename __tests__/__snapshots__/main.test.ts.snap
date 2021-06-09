@@ -26,3 +26,15 @@ Object {
   ],
 }
 `;
+
+exports[`walliTableDriven should spec 3`] = `
+Object {
+  "matched": true,
+  "result": undefined,
+  "rule": Object {
+    "where": Object {
+      "age": 20,
+    },
+  },
+}
+`;
